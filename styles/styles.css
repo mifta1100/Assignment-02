@@ -6,6 +6,7 @@
     font-optical-sizing: auto;
     font-weight: 900;
     font-style: normal;
+    color: aliceblue;
 }
 
 
@@ -33,6 +34,15 @@ main {
     max-width: 1440px;
     max-height: 715px;
     margin: 0 auto;
+}
+.btn-primary {
+    background-color: #FF900E;
+    color: white;
+    padding: 10px 15px;
+    font-size: 1rem;
+    font-weight: 900;
+    border-radius: 80px;
+    border: none;
 }
 
 
@@ -78,4 +88,57 @@ main>section {
 
 #feature-section-title {
     padding-left: 20px;
+}
+
+
+.banner {
+    border: 2px dashed darkblue;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.banner-content {
+    border: 2px dashed darkorange;
+    max-width: 850px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.banner-title {
+    font-weight: 700;
+    font-size: 4rem;
+}
+.banner-image{
+    border-radius: 100px;
+    border: 2px solid darkgray;
+}
+.banner_secondary{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+}
+.banner_secondary_img{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.banner_secondary_content{
+    text-align: center;
+}
+
+.teams {
+    margin-top: 150px;
+    justify-content: space-between;
+    border-radius: 20px;
+    background-color: #2e2e2e;
+}
+
+.team-img-container {
+    width: 25rem;
+    margin: 50px;
+    border-radius: 20px;
+}
+.our-features {
+    padding-top: 30px;
+    margin: 50px;
+    width: 35rem;
 }
