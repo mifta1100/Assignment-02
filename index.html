@@ -45,7 +45,7 @@
                     <p class="banner-description">We believe fitness should be accessible to everyone, everywhere,
                         regardless of income or access to a gym.</p>
                 </div>
-                <div class="banner_secondary" style="border: 2px dashed brown;">
+                <div class="banner_secondary">
                     <div class="banner_secondary_img">
                         <img class="banner-image" src="images/image 3.png" alt="">
                         <div class="banner_secondary_content">
@@ -92,39 +92,146 @@
             </div>
         </section>
 
-        <section>
-            <h3>Extra</h3>
-        </section>
-
-        <section>
-            <h3>BMI</h3>
-        </section>
-
-        <section>
-            <h3>Unique</h3>
-        </section>
-
-        <section>
-            <h3>Meet Our Team</h3>
-            <p>We believe fitness should be accessible to everyone, everywhere, regardless of income or access to a gym.
-            </p>
-
-            <div>
-                <div><img src="images/exercise1.jpg" alt=""></div>
-                <div><img src="images/exercise1.jpg" alt=""></div>
-                <div><img src="images/exercise1.jpg" alt=""></div>
-                <div><img src="images/exercise1.jpg" alt=""></div>
-                <div><img src="images/exercise1.jpg" alt=""></div>
-                <div><img src="images/exercise1.jpg" alt=""></div>
+        <section class="bmi-section">
+            <div class="bmi-grid">
+                <div class="bmi-chart" style="margin-right: 50px;">
+                    <h2>BMI Calculator Chart</h2>
+                    <table>
+                        <tr>
+                            <th>BMI</th>
+                            <th>Weight Status</th>
+                        </tr>
+                        <tr>
+                            <td>Below 18.5</td>
+                            <td>Underweight</td>
+                        </tr>
+                        <tr>
+                            <td>18.5 - 24.9</td>
+                            <td>Healthy</td>
+                        </tr>
+                        <tr>
+                            <td>25.0 - 29.9</td>
+                            <td>Overweight</td>
+                        </tr>
+                        <tr>
+                            <td>30.0 - and Above</td>
+                            <td>Obese</td>
+                        </tr>
+                    </table>
+                </div>
+        
+                <div class="bmi-calculator">
+                    <h2>Calculate your BMI</h2>
+                    <p>We believe fitness should be accessible to everyone, everywhere, regardless of income or access to a gym. </p>
+                    <form>
+                        <input type="number" id="height" placeholder="Height/cm">
+                        <input type="number" id="weight" placeholder="Weight/kg">
+                        <input type="number" id="age" placeholder="Age">
+                        <select id="sex">
+                            <option value="">Sex</option>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                        </select>
+                        <select id="activity">
+                            <option value="">Select an activity factor</option>
+                            <option value="sedentary">Sedentary</option>
+                            <option value="light">Light</option>
+                            <option value="moderate">Moderate</option>
+                            <option value="active">Active</option>
+                            <option value="very-active">Very Active</option>
+                        </select>
+                        <button type="submit">Calculate</button>
+                    </form>
+                </div>
             </div>
         </section>
+
+        <section class="features" style="display: flex;">
+            <div>
+                <h3 id=" feature-section-title" class="section-title">International Personal Trainer <br> Academy
+                    Benefits</h3>
+                <div class="feature-card">
+                    <h4 class="feature-title">Lifetime and immediate access to study materials</h4>
+                    <p class="text-light-gray">Once you sign up, you will have permanent access to your study materials.
+                        We do not set a time limit on your study materials unlike other test prep companies.</p>
+                </div>
+                <div class="feature-card">
+                    <h4 class="feature-title">100% money-back exam pass guarantee</h4>
+                    <p class="text-light-gray">It’s simple, if you don’t pass your personal training exam after going
+                        through our system, we will refund all of your money. No questions asked.</p>
+                </div>
+                <div class="feature-card">
+                    <h4 class="feature-title">Most up to date study materials for every certification</h4>
+                    <p class="text-light-gray">All of our study materials are updated for the most recent version of the
+                        exam and textbook for all personal training or nutrition certifications.</p>
+                </div>
+            </div>
+            <div class="featured-architect">
+                <img src="images/chris.png" alt="">
+            </div>
+        </section>
+
+        <section class="meet-our-team">
+            <div class="banner">
+                <div class="banner-content">
+                    <h1 class="banner-title">Meet Our Team</h1>
+                    <p class="banner-description">We believe fitness should be accessible to everyone, everywhere,
+                        regardless of income or access to a gym.</p>
+                </div>
+                <div class="meet-team-main">
+                    <div class="display-flex meet-team">
+                        <img class="meet-team-img" src="images/trainer1.png" alt="">
+                        <img class="meet-team-img" src="images/trainer2.png" alt="">
+                        <img class="meet-team-img" src="images/trainer3.png" alt="">
+                    </div>
+                    <div class="display-flex meet-team">
+                        <img class="meet-team-img" src="images/trainer4.png" alt="">
+                        <img class="meet-team-img" src="images/trainer5.png" alt="">
+                        <img class="meet-team-img" src="images/trainer6.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="footer-content">
+                <div id="footer-brand-main" class="footer-brand">
+                    <h1>Fitness</h1>
+                    <p>We believe fitness should be accessible to everyone, everywhere, regardless of income or access
+                        to a
+                        gym. With hundreds of professional workouts.</p>
+                </div>
+
+                <div class="footer-brand">
+                    <h2>Get Started</h2>
+                    <ul class="footer-ul">
+                        <li class="fot-li"><a href="#" class="fot-a">Service</a></li>
+                        <li class="fot-li"><a href="#" class="fot-a">Contact Us</a></li>
+                        <li class="fot-li"><a href="#" class="fot-a">Affiliate Program</a></li>
+                        <li class="fot-li"><a href="#" class="fot-a">About Us</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-brand">
+                    <h2>Get Started</h2>
+                    <ul class="footer-ul">
+                        <li class="fot-li"><a href="#" class="fot-a">Fitness</a></li>
+                        <li class="fot-li"><a href="#" class="fot-a">Platform</a></li>
+                        <li class="fot-li"><a href="#" class="fot-a">Workout Library</a></li>
+                        <li class="fot-li"><a href="#" class="fot-a">App Design</a></li>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="footer-bottom">
+                <p>All rights reserved @Fitness 2024</p>
+            </div>
+        </footer>
     </main>
 
-    <footer>
-        <!-- <h1>AlexEdge Fitness</h1>
-        <p>We believe fitness should be accessible to everyone, everywhere, regardless of income or access to a gym.
-            With hundreds of professional workouts.</p> -->
-    </footer>
+
+
+
+
 </body>
 
 </html>
