@@ -16,7 +16,7 @@
     color: #FF900E;
     font-size: 4rem;
     line-height: 1.2;
-  }
+}
 
 * {
     margin: 0;
@@ -38,24 +38,28 @@
 }
 
 .text-light-gray {
-    color: #727272;
+    color: #979797;
 }
 
 main {
     margin: 0 auto;
 }
-.container{
+
+.container {
     max-width: 1320px;
     margin: 0 auto;
 }
-.row{
+
+.row {
     display: flex;
-    
+
 }
-.navigation{
+
+.navigation {
     display: flex;
     justify-content: space-between;
 }
+
 .btn-primary {
     background-color: #FF900E;
     color: white;
@@ -66,7 +70,7 @@ main {
     border: none;
 }
 
-.nav-btn{
+.nav-btn {
     background-color: #FF900E;
     color: white;
     border-radius: 20px;
@@ -102,7 +106,8 @@ main {
     gap: 20px;
     text-decoration: none;
 }
-.nav-li{
+
+.nav-li {
     list-style: none;
 }
 
@@ -195,6 +200,7 @@ main {
     flex-direction: column;
     gap: 20px;
 }
+
 .info-boxes-2 {
     position: absolute;
     bottom: 30px;
@@ -238,53 +244,63 @@ main {
     max-width: 1440px;
     margin: 0 auto;
 }
+
 .banner-content {
     max-width: 850px;
     margin: 0 auto;
     text-align: center;
     margin-bottom: 50px;
 }
+
 .banner-title {
     font-weight: 700;
     font-size: 4rem;
     margin-bottom: 20px;
 }
-.banner-image{
+
+.banner-image {
     border-radius: 100px;
 }
-.banner_secondary{
+
+.banner_secondary {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     /* align-items: center; */
 }
-.banner_secondary_img{
+
+.banner_secondary_img {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 25px;
-    margin-right: 20px;
+    margin-right: 40px;
 }
-.banner_secondary_content{
+
+.banner_secondary_content {
     text-align: center;
 }
 
 .features {
     gap: 140px;
 }
+
 #habit {
     margin-top: 60px;
 }
+
 #bmi {
     margin-top: 60px;
 }
+
 #trainer {
     margin-top: 60px;
 }
+
 #team {
     margin-top: 60px;
 }
 
-.benefits{
+.benefits {
     font-weight: 900;
     font-style: normal;
     color: #FF900E;
@@ -296,28 +312,32 @@ main {
     justify-content: space-around;
     border-radius: 20px;
     background-color: #2e2e2e;
-  }
+}
 
 
 .our-features {
     padding-top: 10px;
     width: 35rem;
 }
-.team-img{
+
+.team-img {
     width: 400px;
     border-radius: 20px;
     margin-bottom: 30px;
 }
-.meet-team{
+
+.meet-team {
     justify-content: center;
     border-radius: 15px;
 }
-.meet-our-team{
+
+.meet-our-team {
     display: flex;
     flex-direction: column;
     margin-bottom: 100px;
 }
-.meet-team-main{
+
+.meet-team-main {
     background-color: #2e2e2e;
     border-radius: 20px;
 }
@@ -328,12 +348,13 @@ main {
     background-color: #2e2e2e;
     gap: 140px;
 }
-.features-div{
+
+.features-div {
     padding: 20px;
     margin: 10px;
 }
 
-.features-text{
+.features-text {
     padding: 50px 50px 0px 50px;
 }
 
@@ -354,6 +375,8 @@ main {
     margin-top: 0px;
     margin-bottom: 0px;
 }
+
+
 .featured-architect img {
     width: 100%;
     border-radius: 10px;
@@ -374,13 +397,13 @@ footer {
     justify-content: space-between;
 }
 
-footer h2{
+footer h2 {
     margin-bottom: 20px;
 }
 
-footer .brand{
+footer .brand {
     margin-bottom: 20px;
-    
+
 }
 
 .footer-brand {
@@ -402,17 +425,20 @@ footer .brand{
     color: #727272;
 }
 
-#footer-brand-main{
+#footer-brand-main {
     width: 650px;
 }
-.footer-ul{
+
+.footer-ul {
     border: none;
 }
-.fot-a{
+
+.fot-a {
     text-decoration: none;
     color: #fff;
 }
-.fot-li{
+
+.fot-li {
     list-style: none;
 }
 
@@ -434,7 +460,16 @@ footer .brand{
     gap: 30px;
 }
 
-.bmi-chart h2, .bmi-calculator h2 {
+.bmi-chart {
+    text-align: center;
+}
+
+.bmi-calculator {
+    text-align: center;
+}
+
+.bmi-chart h2,
+.bmi-calculator h2 {
     margin-bottom: 20px;
 }
 
@@ -443,7 +478,8 @@ footer .brand{
     border-collapse: collapse;
 }
 
-.bmi-chart th, .bmi-chart td {
+.bmi-chart th,
+.bmi-chart td {
     border: 1px solid #cccccc;
     padding: 10px;
     text-align: left;
@@ -487,12 +523,14 @@ footer .brand{
 /* Small Device */
 
 @media (max-width: 576px) {
-    body{
+    body {
         overflow-x: hidden !important;
     }
-    .container{
+
+    .container {
         width: 300px;
     }
+
     .navbar {
         display: flex;
         flex-direction: column;
@@ -503,24 +541,7 @@ footer .brand{
     .brand {
         font-size: 24px;
         margin-bottom: 10px;
-    }
-
-    .nav {
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-        padding: 0;
-        width: 100%;
-    }
-
-    .nav-item {
-        font-size: 18px;
-        padding: 10px;
-        background-color: #333;
-        color: #fff;
-        text-align: center;
-        width: 100%;
-        text-decoration: none;
+        margin-right: 70px;
     }
 
     .nav-item:hover {
@@ -531,27 +552,34 @@ footer .brand{
     .nav-btn {
         display: none;
     }
-    .banner{
+
+    .banner {
         flex-direction: column;
     }
-    .banner_secondary{
+
+    .banner_secondary {
         flex-direction: column;
         display: flex;
     }
-    .banner_secondary_img{
+
+    .banner_secondary_img {
         margin-bottom: 25px;
     }
-    .banner_secondary_content p{
+
+    .banner_secondary_content p {
         font-size: 12px;
     }
+
     .banner-title {
         font-weight: 700;
         font-size: 2rem;
     }
-    #habit .banner-description{
+
+    #habit .banner-description {
         margin-top: 7px;
         font-size: 12px;
     }
+
     .teams {
         margin-top: 30px;
         padding: 20px;
@@ -559,33 +587,31 @@ footer .brand{
         border-radius: 20px;
         background-color: #2e2e2e;
     }
-    #habit .two img{
-    
+
+    #habit .two img {
+
         width: 200px !important;
         border-radius: 30px;
         padding: 20px 0;
-       
+
     }
+
     .bmi-grid {
         display: grid;
         grid-template-columns: none;
         gap: 30px;
-      }
-      .footer-brand {
+    }
+
+    .footer-brand {
         margin-bottom: 20px;
         width: 300px;
         margin-right: 40px;
-      }
-      .footer-content {
+    }
+
+    .footer-content {
         display: block;
         justify-content: space-between;
-      }
+    }
     
+
 }
-
-
-  
-
-
-  
-  
