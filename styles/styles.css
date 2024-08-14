@@ -1,14 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
-
 .inter-font {
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
     font-weight: 900;
     font-style: normal;
-    color: aliceblue;
+    color: #fff;
 }
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 .display-flex {
     display: flex;
@@ -42,7 +46,15 @@ main {
     border: none;
 }
 
-
+.nav-btn{
+    background-color: #FF900E;
+    color: white;
+    border-radius: 20px;
+    border: none;
+    padding: 2.5px 13px;
+    font-size: 16px;
+    font-weight: bold;
+}
 
 /* Navigation Bar */
 .navbar {
@@ -50,23 +62,167 @@ main {
     align-items: center;
     max-width: 1440px;
     margin: 0 auto;
-}
-.nav-link {
-    text-decoration: none;
-    font-size: 18px;
-    font-weight: 500;
-}
-.nav-item {
-    list-style: none;
-    margin-right: 30px;
-}
-ul{
-    border: 1px solid darkgray;
-    border-radius: 13px;
+    padding: 20px 0;
 }
 
-.features {
-    gap: 140px;
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.brand {
+    font-size: 30px;
+    font-weight: bold;
+    color: #ff5722;
+}
+
+.nav {
+    border: 1px solid gray;
+    border-radius: 20px;
+    padding: 7px;
+    display: flex;
+    gap: 20px;
+    text-decoration: none;
+}
+.nav-li{
+    list-style: none;
+}
+
+.nav-item {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.nav-item:hover {
+    color: #ff5722;
+}
+
+/* Hero Section */
+
+.hero-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.hero-text {
+    max-width: 500px;
+}
+
+.hero-text h1 {
+    font-size: 3rem;
+    line-height: 1.2;
+}
+
+.hero-text h1 .styled-text {
+    font-family: 'Dancing Script', cursive;
+    font-size: 3.2rem;
+    color: #ff5722;
+}
+
+.hero-text p {
+    margin: 20px 0;
+    color: #b5b5b5;
+}
+
+.cta-buttons {
+    display: flex;
+    gap: 20px;
+}
+
+.btn-primary {
+    background-color: #ff5722;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn-primary:hover {
+    background-color: #e64a19;
+}
+
+.btn-secondary {
+    border: 2px solid #ff5722;
+    color: #ff5722;
+    padding: 10px 20px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn-secondary:hover {
+    background-color: #ff5722;
+    color: #fff;
+}
+
+/* Hero Image */
+.hero-image {
+    position: relative;
+}
+
+.hero-image img {
+    max-width: 400px;
+    border-radius: 10px;
+}
+
+.info-boxes-1 {
+    position: absolute;
+    bottom: 350px;
+    left: 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.info-boxes-2 {
+    position: absolute;
+    bottom: 30px;
+    left: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.info-box {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+}
+
+.info-box span {
+    font-size: 24px;
+    display: block;
+    color: #ff5722;
+}
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-image {
+        margin-top: 40px;
+    }
+
+    .info-boxes {
+        position: static;
+        flex-direction: row;
+        justify-content: center;
+    }
 }
 
 
@@ -113,9 +269,14 @@ main>section {
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 25px;
 }
 .banner_secondary_content{
     text-align: center;
+}
+
+.features {
+    gap: 140px;
 }
 
 .teams {
@@ -156,7 +317,16 @@ main>section {
 
 
 .features {
+    border-radius: 15px;
+    background-color: #2e2e2e;
     gap: 140px;
+}
+.features-div{
+    padding: 20px;
+}
+
+.features-text{
+    padding: 50px 50px 0px 50px;
 }
 
 #feature-section-title {
@@ -166,7 +336,6 @@ main>section {
 .feature-card {
     padding: 30px;
     border-radius: 8px;
-    box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.06);
     margin-bottom: 15px;
 }
 
@@ -178,6 +347,7 @@ main>section {
 }
 .featured-architect img {
     width: 100%;
+    border-radius: 10px;
 }
 
 
