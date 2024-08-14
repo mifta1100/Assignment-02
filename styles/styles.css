@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Satisfy&display=swap');
 
 .inter-font {
     font-family: "Inter", sans-serif;
@@ -7,6 +8,15 @@
     font-style: normal;
     color: #fff;
 }
+
+.satisfy-regular {
+    font-family: "Satisfy", cursive;
+    font-weight: 900;
+    font-style: normal;
+    color: #FF900E;
+    font-size: 4rem;
+    line-height: 1.2;
+  }
 
 * {
     margin: 0;
@@ -32,9 +42,19 @@
 }
 
 main {
-    max-width: 1440px;
-    max-height: 715px;
     margin: 0 auto;
+}
+.container{
+    max-width: 1320px;
+    margin: 0 auto;
+}
+.row{
+    display: flex;
+    
+}
+.navigation{
+    display: flex;
+    justify-content: space-between;
 }
 .btn-primary {
     background-color: #FF900E;
@@ -65,19 +85,13 @@ main {
     padding: 20px 0;
 }
 
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
+
 
 .brand {
     font-size: 30px;
     font-weight: bold;
     color: #ff5722;
+    font-style: italic;
 }
 
 .nav {
@@ -206,31 +220,8 @@ main {
 }
 
 
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .hero-content {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .hero-image {
-        margin-top: 40px;
-    }
-
-    .info-boxes {
-        position: static;
-        flex-direction: row;
-        justify-content: center;
-    }
-}
-
-
 /* Main */
 
-main>section {
-    margin-top: 130px;
-}
 
 .section-title {
     font-size: 2.8rem;
@@ -256,6 +247,7 @@ main>section {
 .banner-title {
     font-weight: 700;
     font-size: 4rem;
+    margin-bottom: 20px;
 }
 .banner-image{
     border-radius: 100px;
@@ -263,13 +255,14 @@ main>section {
 .banner_secondary{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    align-items: center;
+    /* align-items: center; */
 }
 .banner_secondary_img{
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 25px;
+    margin-right: 20px;
 }
 .banner_secondary_content{
     text-align: center;
@@ -278,28 +271,42 @@ main>section {
 .features {
     gap: 140px;
 }
+#habit {
+    margin-top: 60px;
+}
+#bmi {
+    margin-top: 60px;
+}
+#trainer {
+    margin-top: 60px;
+}
+#team {
+    margin-top: 60px;
+}
+
+.benefits{
+    font-weight: 900;
+    font-style: normal;
+    color: #FF900E;
+    line-height: 1.2;
+}
 
 .teams {
     margin-top: 150px;
-    justify-content: space-between;
+    justify-content: space-around;
     border-radius: 20px;
     background-color: #2e2e2e;
-}
+  }
 
-.team-img-container {
-    width: 25rem;
-    margin: 50px;
-    border-radius: 20px;
-}
+
 .our-features {
     padding-top: 10px;
-    margin: 50px;
     width: 35rem;
 }
-.meet-team-img{
-    width: 350px;
-    margin: 50px;
+.team-img{
+    width: 400px;
     border-radius: 20px;
+    margin-bottom: 30px;
 }
 .meet-team{
     justify-content: center;
@@ -323,6 +330,7 @@ main>section {
 }
 .features-div{
     padding: 20px;
+    margin: 10px;
 }
 
 .features-text{
@@ -331,6 +339,7 @@ main>section {
 
 #feature-section-title {
     padding-left: 20px;
+    font-size: 4rem;
 }
 
 .feature-card {
@@ -352,7 +361,7 @@ main>section {
 
 
 /* Footer */
-.footer {
+footer {
     background-color: #141414;
     color: #fff;
     padding: 40px 20px;
@@ -365,12 +374,19 @@ main>section {
     justify-content: space-between;
 }
 
+footer h2{
+    margin-bottom: 20px;
+}
+
+footer .brand{
+    margin-bottom: 20px;
+    
+}
+
 .footer-brand {
     margin-bottom: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     width: 450px;
+    margin-right: 40px;
 }
 
 .footer-bottom {
@@ -466,3 +482,110 @@ main>section {
 .bmi-calculator button:hover {
     background-color: #e64a19;
 }
+
+
+/* Small Device */
+
+@media (max-width: 576px) {
+    body{
+        overflow-x: hidden !important;
+    }
+    .container{
+        width: 300px;
+    }
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+    }
+
+    .brand {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+
+    .nav {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding: 0;
+        width: 100%;
+    }
+
+    .nav-item {
+        font-size: 18px;
+        padding: 10px;
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        width: 100%;
+        text-decoration: none;
+    }
+
+    .nav-item:hover {
+        background-color: #444;
+        color: #ff5722;
+    }
+
+    .nav-btn {
+        display: none;
+    }
+    .banner{
+        flex-direction: column;
+    }
+    .banner_secondary{
+        flex-direction: column;
+        display: flex;
+    }
+    .banner_secondary_img{
+        margin-bottom: 25px;
+    }
+    .banner_secondary_content p{
+        font-size: 12px;
+    }
+    .banner-title {
+        font-weight: 700;
+        font-size: 2rem;
+    }
+    #habit .banner-description{
+        margin-top: 7px;
+        font-size: 12px;
+    }
+    .teams {
+        margin-top: 30px;
+        padding: 20px;
+        justify-content: space-around;
+        border-radius: 20px;
+        background-color: #2e2e2e;
+    }
+    #habit .two img{
+    
+        width: 200px !important;
+        border-radius: 30px;
+        padding: 20px 0;
+       
+    }
+    .bmi-grid {
+        display: grid;
+        grid-template-columns: none;
+        gap: 30px;
+      }
+      .footer-brand {
+        margin-bottom: 20px;
+        width: 300px;
+        margin-right: 40px;
+      }
+      .footer-content {
+        display: block;
+        justify-content: space-between;
+      }
+    
+}
+
+
+  
+
+
+  
+  
